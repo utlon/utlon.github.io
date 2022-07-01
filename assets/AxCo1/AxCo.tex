@@ -1,0 +1,15 @@
+% !TEX root = AxCo.tex
+% arara: lualatex: { shell: yes }
+
+\documentclass[crop,tikz,convert=pdf2svg]{standalone}
+\usetikzlibrary{cd}
+\tikzset{every picture/.style={/utils/exec={\color{white}}}}
+
+\begin{document}
+
+\begin{tikzcd}
+p_* E \ar{r}{\theta_E}\ar{d}[swap]{p_* f} & p_! E\ar{d}{p_! f}\\
+p_* F \ar{r}[swap]{\theta_F} & p_! F
+\end{tikzcd}
+
+\end{document}
